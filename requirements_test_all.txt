@@ -1999,7 +1999,7 @@ sensorpro-ble==0.5.3
 sensorpush-ble==1.6.2
 
 # homeassistant.components.sentry
-sentry-sdk==1.40.3
+sentry-sdk==2.8.0
 
 # homeassistant.components.sfr_box
 sfrbox-api==0.0.8
@@ -2321,7 +2321,7 @@ youless-api==2.1.2
 youtubeaio==1.1.5
 
 # homeassistant.components.media_extractor
-yt-dlp==2024.07.01
+yt-dlp==2024.7.7
 
 # homeassistant.components.zamg
 zamg==0.3.6
