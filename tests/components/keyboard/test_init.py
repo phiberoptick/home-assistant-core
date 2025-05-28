@@ -1,31 +1,26 @@
-"""Tests for the Gstreamer platform."""
+"""Keyboard tests."""
 
 from unittest.mock import Mock, patch
 
-from homeassistant.components.gstreamer import DOMAIN
-from homeassistant.components.media_player import DOMAIN as PLATFORM_DOMAIN
-from homeassistant.const import CONF_PLATFORM
 from homeassistant.core import DOMAIN as HOMEASSISTANT_DOMAIN, HomeAssistant
 from homeassistant.helpers import issue_registry as ir
 from homeassistant.setup import async_setup_component
 
 
-@patch.dict("sys.modules", gsp=Mock())
+@patch.dict("sys.modules", pykeyboard=Mock())
 async def test_repair_issue_is_created(
     hass: HomeAssistant,
     issue_registry: ir.IssueRegistry,
 ) -> None:
     """Test repair issue is created."""
+    from homeassistant.components.keyboard import (  # pylint:disable=import-outside-toplevel
+        DOMAIN,
+    )
+
     assert await async_setup_component(
         hass,
-        PLATFORM_DOMAIN,
-        {
-            PLATFORM_DOMAIN: [
-                {
-                    CONF_PLATFORM: DOMAIN,
-                }
-            ],
-        },
+        DOMAIN,
+        {DOMAIN: {}},
     )
     await hass.async_block_till_done()
     assert (
