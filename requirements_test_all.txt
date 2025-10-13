@@ -94,7 +94,7 @@ PyTransportNSW==0.1.1
 PyTurboJPEG==1.8.0
 
 # homeassistant.components.vicare
-PyViCare==2.52.0
+PyViCare==2.54.0
 
 # homeassistant.components.xiaomi_aqara
 PyXiaomiGateway==0.14.3
@@ -189,7 +189,7 @@ aioaquacell==0.2.0
 aioaseko==1.0.0
 
 # homeassistant.components.asuswrt
-aioasuswrt==1.4.0
+aioasuswrt==1.5.1
 
 # homeassistant.components.husqvarna_automower
 aioautomower==2.2.1
@@ -1411,7 +1411,7 @@ openhomedevice==2.2.0
 openwebifpy==4.3.1
 
 # homeassistant.components.opower
-opower==0.15.6
+opower==0.15.7
 
 # homeassistant.components.oralb
 oralb-ble==0.17.6
@@ -2026,7 +2026,7 @@ pyspcwebgw==0.7.0
 pyspeex-noise==1.0.2
 
 # homeassistant.components.squeezebox
-pysqueezebox==0.12.1
+pysqueezebox==0.13.0
 
 # homeassistant.components.stiebel_eltron
 pystiebeleltron==0.2.3
